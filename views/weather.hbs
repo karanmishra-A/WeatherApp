@@ -119,5 +119,63 @@
       <p>Created with ❤️ By Karan</p>
     </footer>
     <script src="index.js"></script>
+
+    
+    <script>
+      const getCurrentDay = () => { 
+        let weekDay = new Array(7);
+        weekDay[0] = "SUNDAY";
+        weekDay[1] = "MONDAY"; 
+        weekDay[2] = "TUESDAY"; 
+        weekDay[3] = "WEDNESDAY";
+        weekDay[4] = "THURSDAY"; 
+        weekDay[5] = "FRIDAY"; 
+        weekDay[6] = "SATURDAY";
+        let currentTime = new Date(); 
+        day = weekDay[currentTime.getDay()]; 
+        let currentDay = document.getElementById('currentDay'); 
+        currentDay.innerText = day; 
+        }; 
+        getCurrentDay();
+
+        const getCurrentTime = () => {
+        var months = [
+          "JANUARY",
+          "FEBRUARY",
+          "MARCH",
+          "APRIL",
+          "MAY",
+          "JUNE",
+          "JULY",
+          "AUGUST",
+          "SEPTEMBER",
+          "OCTOBER",
+          "NOVEMBER",
+          "DECEMBER",
+        ];
+        var current = new Date();
+        var month = months[current.getMonth()];
+        var date = current.getDate();
+        let hours = current.getHours();
+        let minutes = current.getMinutes();
+        let periods = "AM";
+        if (hours > 11) {
+          periods = "PM";
+          if (hours > 12) {
+            hours -= 12;
+          }
+        }
+        if (minutes < 10) {
+          minutes = "0" + minutes;
+        }
+
+        return `${month} ${date} | ${hours}:${minutes}${periods}`;
+      };
+
+      currentDate.innerHTML =  getCurrentTime();
+
+    </script>
+
+
   </body>
 </html>
