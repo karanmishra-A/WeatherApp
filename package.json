@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Creating a weather app using nodeJS and expressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karanmishra-A/WeatherApp.git"
+  },
+  "author": "Karan Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karanmishra-A/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/karanmishra-A/WeatherApp#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.18"
+  }
+}
